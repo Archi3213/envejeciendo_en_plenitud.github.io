@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envejeciendo en Plenitud</title>
+    <style>
+        /* Estilos generales */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.unsplash.com/photo-1454875392665-2ac2c85e8d3e?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            min-height: 2000px; /* Ajuste para contenido de mayor altura */
+            color: #333; /* Color de texto predeterminado */
+            transition: background-color 0.3s; /* Transición de color de fondo */
+        }
+
+        h1, h2, p, image, url {
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        /* Estilos de la barra de navegación */
+        .navbar {
+            overflow: hidden;
+            background-color: rgba(0, 0, 0, 0.8); /* Fondo semi-transparente */
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: top 0.3s, background-color 0.3s; /* Transición de color de fondo y posición */
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            transition: background-color 0.3s; /* Transición de color de fondo */
+        }
+
+        .navbar a:hover {
+            background-color: #555; /* Color de fondo al pasar el cursor */
+        }
+
+        /* Estilos de los cuadros de diálogo */
+        .dialog-box {
+            width: 400px;
+            max-width: 100%;
+            background-color: rgba(255, 255, 255, 0.95); /* Fondo semi-transparente */
+            position: relative;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7); /* Sombra más pronunciada */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s; /* Transición de transformación y sombra */
+            color: #333; /* Color de texto dentro del cuadro */
+        }
+
+        .dialog-box:hover {
+            transform: scale(1.15); /* Escala ligeramente al pasar el cursor */
+            box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.8); /* Sombra aún más pronunciada */
+        }
+
+        /* Estilos para el contenido */
+        .content {
+            padding: 20px;
+            margin-top: 80px; /* Ajuste de margen para evitar solapamiento */
+            color: white;
+            text-align: justify; /* Justificar el texto del contenido */
+            line-height: 1.6; /* Altura de línea para mejorar la legibilidad */
+        }
+
+        .content h1 {
+            font-size: 36px; /* Tamaño de fuente grande para el título principal */
+        }
+
+        /* Estilo para el pie de página */
+        footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilo para el botón de volver arriba */
+        .back-to-top {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #555;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            display: none;
+            transition: opacity 0.3s;
+        }
+
+        .back-to-top:hover {
+            opacity: 0.8;
+        }
+
+        /* Estilos para sección de beneficios */
+        .benefits-section {
+            padding: 50px 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 40px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+            text-align: justify;
+        }
+
+        .benefits-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .benefits-section-img {
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .benefits-section p {
+            margin-bottom: 10px;
+        }
+
+        .benefits-section img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar" id="navbar">
+        <a href="#">Inicio</a>
+        <a href="#">Acerca de</a>
+        <a href="#">Servicios</a>
+        <a href="#">Contacto</a>
+    </div>
+
+    <div class="content">
+        
+        <h1>Envejeciendo en Plenitud</h1>
+        <p>
+            El programa de envejecimiento pleno es una iniciativa integral diseñada para promover el bienestar y la calidad de vida de las personas mayores. Este programa se desarrolla en dos centros especializados: un albergue y una casa de día, ambos dedicados a brindar atención y cuidados específicos a nuestros adultos mayores.
+        </p>
+
+        <div id="content">
+            <div style="height:20px"></div>
+            <table width="100%" border="0" cellspacing="0" cellpadding="10">
+                <tbody>
+                    <tr>
+                        <td colspan="2" class="borde_izq borde_der borde_top borde_inf">
+                            <span class="textoverdebold">¿EN QUÉ CONSISTE?</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- Otros elementos del contenido -->
+        </div>
+    </div>
+    <div class="dialog-box" style="left: -30%;">
+        <h2>CENTRO ARMONÍA Y RENACER</h2>
+        <p>En estos centros, se ofrece una amplia gama de servicios especializados, incluyendo fisioterapia para mantener la movilidad y la funcionalidad física, nutrición para una alimentación adecuada y balanceada, y gerontología para abordar de manera integral los aspectos médicos, sociales y psicológicos del envejecimiento.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiBoxePkoqfTZa9MCI_yJk3CTcUQFytbab6TwOg7DCzg&s" alt="Imagen 2">
+    </div>
+    
+    <div class="dialog-box" style="left: 0%;">
+        <h2>BENEFICIOS</h2>
+          <p>Además de los servicios de salud, el programa también ofrece actividades enfocadas en la promoción de la salud y el bienestar, como ejercicios físicos adaptados, actividades recreativas y culturales, así como talleres y charlas educativas sobre el cuidado personal y la prevención de enfermedades.</p>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiBoxePkoqfTZa9MCI_yJk3CTcUQFytbab6TwOg7DCzg&s" alt="Imagen 2">
+        </div>
+    <div class="dialog-box" style="left: 30%;">
+        <h2>¿Por qué lo hacemos?</h2>
+        <p>Nuestro objetivo es brindar un entorno cálido y seguro donde nuestros adultos mayores puedan disfrutar de una vida plena, activa y saludable, fomentando la autonomía, la integración social y el sentido de pertenencia en la comunidad. </p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiBoxePkoqfTZa9MCI_yJk3CTcUQFytbab6TwOg7DCzg&s" alt="Imagen 2">
+
+    </div>
+
+    <div class="benefits-section">
+        <h2>BENEFICIOS DEL PROGRAMA</h2>
+        <p>
+            Nuestro programa ofrece una amplia gama de beneficios para nuestros adultos mayores, incluyendo:
+        </p>
+        <div class="benefits-section-img">
+        <ul>
+            <li>Fisioterapia especializada para mantener la movilidad y funcionalidad física.</li>
+            <li>Nutrición personalizada para una alimentación adecuada y balanceada.</li>
+            <li>Actividades recreativas y culturales para promover la salud mental y emocional.</li>
+            <li>Talleres y charlas educativas sobre el cuidado personal y la prevención de enfermedades.</li>
+        </ul>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiBoxePkoqfTZa9MCI_yJk3CTcUQFytbab6TwOg7DCzg&s" alt="Imagen 2">
+   
+    </div>
+ </div>
+
+    <footer>
+        © 2024 Envejeciendo en Plenitud - Todos los derechos reservados
+    </footer>
+
+    <div class="back-to-top" onclick="scrollToTop()">Volver arriba</div>
+
+    <script>
+        // Cambiar el color de fondo del body al hacer scroll
+        window.onscroll = function() {
+            let scrollPosition = window.scrollY;
+            if (scrollPosition > 100) {
+                document.body.style.backgroundColor = "#fff"; /* Cambia a fondo blanco */
+                showBackToTopButton();
+            } else {
+                document.body.style.backgroundColor = "transparent"; /* Vuelve a transparente */
+                hideBackToTopButton();
+            }
+        };
+
+        // Función para mostrar el botón de volver arriba
+        function showBackToTopButton() {
+            document.querySelector('.back-to-top').style.display = 'block';
+        }
+
+        // Función para ocultar el botón de volver arriba
+        function hideBackToTopButton() {
+            document.querySelector('.back-to-top').style.display = 'none';
+        }
+
+        // Función para volver arriba suavemente
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+</body>
+
+</html>
